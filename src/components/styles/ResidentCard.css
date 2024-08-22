@@ -1,0 +1,72 @@
+ body {
+    background-color: blueviolet;
+ }
+  .resident {
+    width: 100%;
+    max-width: 19em;
+    background-color: aqua;
+    border-radius: 0.8em;
+    overflow: hidden;
+    &:hover{
+        transform: scale(1.04);
+    }
+  }
+
+  .resident__header{
+    position: relative;
+  }
+
+  .resident__status__container {
+    position: absolute;
+    top: 3em;
+    background-color: aqua;
+    color: white;
+    width: 40%;
+    padding: 0.3em 1em;
+    border-radius: 0 0.5em 0.5em 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+
+
+  }
+
+  .resident__status__circle {
+    width: 1em;
+    aspect-ratio: 1;
+    background-color: #aaa;
+    border-radius: 50%;
+
+  }
+  .alive{
+    background-color: green;
+  }
+  .dead{
+    background-color: red;
+  }
+  
+  .resident__status{
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  .resident__hr{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-color: #9994;
+}
+.resident__List{
+    display: grid;
+    gap: 0.8em;
+
+}
+.resident__item{
+    display: grid;
+    gap: 0.2;
+
+}
+.resident__label{
+    font-size: 0.8em;
+    color: #999;
+    padding-left: 1em
+
+}
